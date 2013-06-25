@@ -1,8 +1,9 @@
 var mongo       = require('./database.js')
+  , __startTime = require('./secret.js').constants.startTime
+  , __timeDelta = require('./secret.js').constants.timeDelta
   , fs          = require('fs')
   , events      = require('events')
-  , __startTime = require('./secret.js').constants.startTime
-  , __timeDelta = require('./secret.js').constants.timeDelta;
+;
 
 // ---------------------------------------------------------- //
 // Process data before DB insert

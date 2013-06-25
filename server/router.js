@@ -1,11 +1,12 @@
-var mongo     = require("./database.js")
-	, colors    = require('colors')
-	, collection
-	, fs        = require('fs')
+var mongo     = require('./database.js')
 	, process   = require('./process.js')
 	, loop      = require('./app.js')
+	, secret    = require('./secret.js').admin
+	, colors    = require('colors')
+	, fs        = require('fs')
 	, interval
-	, secret    = require('./secret.js').admin;
+	, collection
+;
 
 mongo.connect(function(msg, coltn) {
 	if(msg == null) {

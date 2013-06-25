@@ -1,3 +1,33 @@
+### Files
+
+* `app.js`
+
+  * defines routes
+  * 
+
+* `config.js`
+
+  * setup and configure middleware
+
+* `database.js`
+
+  * establish db connection
+
+* `github.js`
+
+* `process.js`
+
+  * 
+
+* `router.js`
+
+  * 
+
+* `secret.js`
+
+  * house all the credentials
+
+
 ## Design Docs
 
 # System Design

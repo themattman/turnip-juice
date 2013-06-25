@@ -8,7 +8,8 @@ var express     = require('express')
   , fs          = require('fs')
   , mongo       = require('./database.js')
   , __timeDelta = require('./secret.js').constants.timeDelta
-  , events      = require('events');
+  , events      = require('events')
+;
 
 // Synchro here
 var graphUpdateSignal = function(){};

@@ -1,21 +1,30 @@
 {
-  "name": "turnip",
-  "version": "0.0.1-117",
-  "private": true,
-  "scripts": {
+  "name": "turnip-juice"
+  , "version": "0.0.2"
+  , "private": true
+  , "scripts": {
     "start": "node server"
-  },
+  }
+  , "author": {
+    "name": "Matt Kneiser"
+    , "email": "mattman@umich.edu"
+  }
+  , "contributors": [
+    {
+      "name": "Matt Kneiser"
+      , "email": "mattman@umich.edu"
+    }
+  ],
   "dependencies": {
-    "colors": "*",
-    "express": "3.0.5",
-    "jade": "*",
-    "less-middleware": "*",
-    "mongodb": "*",
-    "nodemailer": "*",
-    "socket.io": "*"
-  },
-  "subdomain": "themattmans.turnip",
-  "engines": {
-    "node": "0.8.x"
+    "colors": "0.6.0-1"
+    , "express": "3.2.6"
+    , "jade": "0.31.2"
+    , "less-middleware": "0.1.12"
+    , "mongodb": "1.3.10"
+    , "socket.io": "0.9.16"
+  }
+  , "subdomain": "themattmans.turnip"
+  , "engines": {
+    "node": "0.10.12"
   }
 }
