@@ -36,7 +36,6 @@ app.get('/db',              router.db        );
 app.get('/github/accounts', router.githubjson);
 app.get('/help',            router.help      );
 app.get('/messages',        router.messages  );
-app.get('/test',            router.test      );
 
 // POST
 app.post('/hook',  router.hook );

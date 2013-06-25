@@ -1,5 +1,5 @@
-var MongoDB 	= require('mongodb')
-	, secret 		= require('./secret.js')
+var MongoDB	= require('mongodb')
+	, secret 	= require('./secret.js')
 ;
 
 var API = module.exports = exports;
@@ -11,10 +11,10 @@ var API = module.exports = exports;
 	API.connect = function initMongoDB(cb) {
 		console.log('Starting DB Connection');
 		Database.open(function(err, db) {
-			if(err) { return cb(err); }
+			if(err){return cb(err);}
 			Database.authenticate(secret.db.user, secret.db.pass, function (msg) {
 				db.collection("commits", function(err, collection){
-					if (err) throw err;
+					if(err){throw err;}
 					cb(msg,collection);
 				})
 			});

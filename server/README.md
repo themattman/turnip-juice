@@ -15,6 +15,10 @@
 
 * `github.js`
 
+* `github.json`
+
+  * All the accounts to track (investigate usage of this, probably should be deprecated)
+
 * `process.js`
 
   * 

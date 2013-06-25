@@ -1,8 +1,8 @@
 var mongo       = require('./database.js')
   , __startTime = require('./secret.js').constants.startTime
   , __timeDelta = require('./secret.js').constants.timeDelta
-  , fs          = require('fs')
   , events      = require('events')
+  , fs          = require('fs')
 ;
 
 // ---------------------------------------------------------- //
@@ -20,7 +20,7 @@ exports.commitFeed  = Updater;
 
 function zeroOutUnusedDataPoints(latest_timestamp, cb) {
   console.log('zeroOutUnusedDataPoints()'.zebra);
-  if((latest_timestamp - __startTime) > 0){
+  if((latest_timestamp - __startTime) > 0) {
     var numPointsToFill = ((latest_timestamp - __startTime) / __timeDelta);
     var commits = [];
     for(var i = 0; i < numPointsToFill; ++i) {

@@ -7,12 +7,4 @@ block content
     .btn.btn-danger Stop
 
 block scripts
-  script
-    $('.btn.btn-success').click(function(){
-      console.log('suc');
-      $.post('/start', { password: $('#password').val() });
-    });
-    $('.btn.btn-danger').click(function(){
-      console.log('dan');
-      $.post('/stop', { password: $('#password').val() });
-    });
+  script(src="/js/access_button.js")

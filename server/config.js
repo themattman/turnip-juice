@@ -1,11 +1,12 @@
-var express = require('express')
-  , path    = require('path')
-  , secret  = require('./secret.js')
+var express  = require('express')
+  , path     = require('path')
+  , secret   = require('./secret.js')
+  , APP_PORT = 3000
 ;
 
 module.exports = function configure(app) {
   app.configure(function(){
-    app.set('port', process.env.PORT || 3000);
+    app.set('port', process.env.PORT || APP_PORT);
     app.set('views', __dirname + '/../views');
     app.set('view engine', 'jade');
     app.use(express.logger('dev'));
